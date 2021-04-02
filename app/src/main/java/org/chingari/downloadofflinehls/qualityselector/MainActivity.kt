@@ -22,7 +22,8 @@ import com.google.android.exoplayer2.util.Util
 import org.chingari.downloadofflinehls.R
 
 //const val HLS_STATIC_URL = "https://bitdash-a.akamaihd.net/content/MI201109210084_1/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.m3u8"
-const val HLS_STATIC_URL = "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10225/1/071CF9A2-F9B9-48A1-8D81-012721D0A52C/avc_540p_2000/prog_index.m3u8"
+//const val HLS_STATIC_URL = "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10225/1/071CF9A2-F9B9-48A1-8D81-012721D0A52C/avc_540p_2000/prog_index.m3u8"
+const val HLS_STATIC_URL = "https://media.chingari.io/uploads/863fc92f-20e8-4a5e-9fc6-856bdfd60c8d-1610723727970/webpath_863fc92f-20e8-4a5e-9fc6-856bdfd60c8d-1610723727970.mp4"
 const val STATE_RESUME_WINDOW = "resumeWindow"
 const val STATE_RESUME_POSITION = "resumePosition"
 const val STATE_PLAYER_FULLSCREEN = "playerFullscreen"
@@ -45,7 +46,7 @@ class MainActivity : AppCompatActivity() {
     private var trackDialog: Dialog? = null
     private val mediaItem = MediaItem.Builder()
         .setUri(HLS_STATIC_URL)
-        .setMimeType(MimeTypes.APPLICATION_M3U8)
+        .setMimeType(MimeTypes.VIDEO_MP4)
         .build()
 
     override fun onCreate(savedInstanceState: Bundle?) {

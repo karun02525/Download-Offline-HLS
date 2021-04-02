@@ -16,7 +16,7 @@
         android:theme="@style/Theme.DownloadOfflineHLS">
 
 
-        <activity android:name=".nativepreview.MainActivity">
+        <activity android:name=".qualityselector.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
