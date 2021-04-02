@@ -14,7 +14,9 @@
         android:supportsRtl="true"
         android:name=".DownloadVideoApplication"
         android:theme="@style/Theme.DownloadOfflineHLS">
-        <activity android:name=".qualityselector.MainActivity">
+
+
+        <activity android:name=".nativepreview.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
